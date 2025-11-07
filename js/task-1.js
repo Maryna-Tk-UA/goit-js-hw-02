@@ -2,7 +2,6 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
   const totalPrice = quantity * pricePerDroid;
 
   if (totalPrice >= customerCredits) {
-    // оця ≥ – каверзне місце
     return `Insufficient funds! You need ${
       totalPrice - customerCredits
     } more credits.`;
